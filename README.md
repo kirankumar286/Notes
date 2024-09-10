@@ -1,2 +1,2 @@
 # Notes
-All my notes of subjects are available here
+All my notes on GIT are available here
