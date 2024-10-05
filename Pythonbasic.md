@@ -1,5 +1,5 @@
-#Arithmetic operators
-##Python can calculate numbers using common mathematical operators, along with some special operators, too:  
+# Arithmetic operators
+## Python can calculate numbers using common mathematical operators, along with some special operators, too:  
 
 ### x + y = Addition + operator returns the sum of x plus y
 ### x - y = Subtraction - operator returns the difference of x minus y
