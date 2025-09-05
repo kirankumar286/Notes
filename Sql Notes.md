@@ -28,9 +28,20 @@
 - %z matches values that end with 'z'.
 - _ is used one space after or befor a leter in single quotes.
 
-  ### SELECT * FROM shows WHERE year BETWEEN 2020 AND 2025;
-  ### SELECT * FROM shows WHERE name BETWEEN 'A' AND 'D';
+### SELECT * FROM shows WHERE year BETWEEN 2020 AND 2025;
+### SELECT * FROM shows WHERE name BETWEEN 'A' AND 'D';
 
-  ### SELECT name, genre, stream, year FROM shows ORDER BY year DESC;
-  - DESC is the descending
-  - The ORDER BY statement sorts rows of data in ascending or descending order. By default, this command sorts the data in ascending order. 
+### SELECT name, genre, stream, year FROM shows ORDER BY year DESC;
+- DESC is the descending
+- The ORDER BY statement sorts rows of data in ascending or descending order. By default, this command sorts the data in ascending order. 
+
+Here’s a recap:
+
+- SELECT selects data FROM a database.
+- SELECT * selects all the columns.
+- DISTINCT returns unique values in a column.
+- WHERE filters results based on a condition.
+- Comparison operators: =, !=, >, <, >=, <=.
+- LIKE operator searches for a specific pattern.
+- BETWEEN operator matches values in a range.
+- ORDER BY sorts data (ascending/descending).
