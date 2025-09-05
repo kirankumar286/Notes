@@ -19,3 +19,18 @@
 - < less than
 - ">=" greater than or equal to
 - <= less than or equal to
+
+### SELECT * FROM shows WHERE name LIKE 'T%';
+- The LIKE operator can be used to search for a pattern in a column. It’s used in the WHERE clause.
+- The percentage sign % is a wildcard character that can be used with LIKE. You can use it to match characters to a pattern of your desired query.
+- The % can be used in different ways:
+- A% matches values that begin with letter 'A'.
+- %z matches values that end with 'z'.
+- _ is used one space after or befor a leter in single quotes.
+
+  ### SELECT * FROM shows WHERE year BETWEEN 2020 AND 2025;
+  ### SELECT * FROM shows WHERE name BETWEEN 'A' AND 'D';
+
+  ### SELECT name, genre, stream, year FROM shows ORDER BY year DESC;
+  - DESC is the descending
+  - The ORDER BY statement sorts rows of data in ascending or descending order. By default, this command sorts the data in ascending order. 
