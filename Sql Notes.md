@@ -51,8 +51,17 @@ Aggregate functions are used to perform calculations and return a single value.
 The most common aggregate functions are:
 
 - COUNT(): returns the number of rows.
+- SELECT COUNT(*) FROM table_name;
 - MAX(): returns the largest value in a column.
+- SELECT title, artist, MAX(plays) FROM playlist;
 - MIN(): returns the smallest value in a column.
+- SELECT MIN(plays) FROM playlist;
 - SUM(): returns the total sum in a column.
+- SELECT SUM(plays) FROM playlist;
 - AVG(): returns the average value in a column.
-Aggregate functions are used a ton with something called a GROUP BY which we will also learn later in this chapter.
+- SELECT AVG(plays) FROM playlist;
+Aggregate functions are used a ton with something called a GROUP BY
+- SELECT genre, COUNT(*) FROM playlist GROUP BY genre;
+
+What are the average Metascores for each of the genres?
+- SELECT genre , avg(metascore) from games group by genre order by metascore desc;
