@@ -45,7 +45,7 @@ Here’s a recap:
 - LIKE operator searches for a specific pattern.
 - BETWEEN operator matches values in a range.
 - ORDER BY sorts data (ascending/descending).
-
+- SELECT brand, model, price, sold FROM cars WHERE brand IN ('Ford', 'Chevrolet', 'Ferrari') 	AND sold IS FALSE; 
 Aggregate functions are used to perform calculations and return a single value.
 
 The most common aggregate functions are:
@@ -60,8 +60,35 @@ The most common aggregate functions are:
 - SELECT SUM(plays) FROM playlist;
 - AVG(): returns the average value in a column.
 - SELECT AVG(plays) FROM playlist;
+  
 Aggregate functions are used a ton with something called a GROUP BY
 - SELECT genre, COUNT(*) FROM playlist GROUP BY genre;
 
 What are the average Metascores for each of the genres?
 - SELECT genre , avg(metascore) from games group by genre order by metascore desc;
+
+### Creating Tables
+- CREATE TABLE companies (
+  id INTEGER,
+  name TEXT,
+  headquarters TEXT,
+  year INTEGER);
+
+### Inserting values
+- INSERT INTO companies (id, name, headquarters, year) VALUES (1, 'Twitter', 'San Francisco 🌁', 2006);
+- INSERT INTO companies (id, name, headquarters, year) VALUES (2, 'Duolingo', 'Pittsburgh 🐝', 2011);
+- INSERT INTO companies (id, name, headquarters, year) VALUES (3, 'BeReal', 'Paris 🇫🇷', 2020);
+- INSERT INTO companies (id, name, headquarters, year) VALUES (4, 'Codedex', 'New York 🗽', 2022);
+
+### Altering table by adding columns and updating the content
+- ALTER TABLE companies ADD COLUMN about TEXT;
+- UPDATE companies SET name = 'X' WHERE name = 'Twitter';
+
+### Inner join also known as join
+- SELECT title , year , book_id, author_id from books join authors ON books.author_id = authors.id;
+
+### Left join
+- SELECT title , year , book_id, author_id from books left join authors ON books.author_id = authors.id;
+
+### UNION The UNION operator in SQL combines two tables into one list, without duplicates.
+- SELECT columns FROM table1 UNION SELECT columns FROM table2;
