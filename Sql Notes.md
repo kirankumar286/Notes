@@ -1,4 +1,4 @@
-# SQL (Structured Query Language) 
+# SQL (Structured Query Language) ()
 
 ### SELECT * FROM shows;
 - "*" asterisk means all columns.
